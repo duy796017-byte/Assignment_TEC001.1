@@ -4,8 +4,7 @@ class Car:
         self.registration = registration
         self.max_speed = max_speed
         self.speed = 0
-        self.distance = 0
-
+        self.distance = 0        
     def accelerate(self, change):
         self.speed += change
         if self.speed > self.max_speed:
@@ -23,7 +22,7 @@ car_test.accelerate(50)
 print(f"Speed after +50 km/h: {car_test.speed}")
 car_test.accelerate(-200)
 print(f"Speed after emergency brake: {car_test.speed}")
-print("\n--- Start racing ---\n")
+print("\n Start racing \n")
 cars = []
 for i in range(1, 11):
     reg = "ABC-" + str(i)
